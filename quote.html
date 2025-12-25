@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Quote - Mile High Mobility Scooters</title>
+
+<!-- POPPINS FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- LINK TO GLOBAL STYLE -->
+<link rel="stylesheet" href="style.css">
+
+<!-- WIDER + SPACED QUOTE SECTION -->
+<style>
+    #quote {
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 0 40px;
+        text-align: center;
+        line-height: 1.9;
+    }
+
+    #quote h2 {
+        font-size: 2.4rem;
+        margin-bottom: 25px;
+    }
+
+    #quote p {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+
+    form {
+        max-width: 750px;
+        margin: 40px auto;
+        background: #f7f7f7;
+        padding: 35px;
+        border-radius: 12px;
+        line-height: 1.8;
+    }
+
+    label {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 25px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+    }
+
+    textarea {
+        height: 140px;
+    }
+
+    button {
+        background: #1f4fd8;
+        color: white;
+        border: none;
+        padding: 16px 35px;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+    }
+
+    button:hover {
+        background: #163bb5;
+    }
+</style>
+
+</head>
+
+<body>
+
+<!-- ✅ HEADER WITH EXTRA-LARGE LOGO MOVED UP -->
+<header>
+  <div style="display: flex; align-items: center; justify-content: space-between; margin-top: -120px;">
+    
+    <!-- Extra large logo -->
+    <a href="index.html">
+      <img src="images/Untitled_design-removebg-preview.png" 
+           alt="Mile High Mobility Scooters Logo" 
+           style="height: 200px; margin-left: 20px;">
+    </a>
+
+    <!-- Navigation bar -->
+    <nav style="margin-right: 20px;">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="quote.html" class="active">Free Quote</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html">FAQs</a>
+    </nav>
+  </div>
+</header>
+
+<section id="quote">
+<h2>Get a Free Quote</h2>
+<p>Fill out the form below and we’ll get back to you quickly with pricing and availability.</p>
+
+<!-- ⭐ FULLY INTEGRATED FORMSUBMIT FORM ⭐ -->
+<form action="https://formsubmit.co/milehighmobilityscooters@gmail.com" method="POST">
+
+    <!-- Hidden FormSubmit settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="New Quote Request">
+
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="Name" required>
+
+    <label for="phone">Phone Number *</label>
+    <input type="text" id="phone" name="Phone" required>
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="Email" required>
+
+    <!-- NEW: Start Date -->
+    <label for="start">Start Date *</label>
+    <input type="date" id="start" name="Start Date" required>
+
+    <!-- NEW: End Date -->
+    <label for="end">End Date *</label>
+    <input type="date" id="end" name="End Date" required>
+
+    <!-- Delivery Location updated -->
+    <label for="location">Delivery Location ("Address of drop-off spot needed") *</label>
+    <input type="text" id="location" name="Delivery Location" required>
+
+    <label for="notes">Additional Notes (Optional)</label>
+    <textarea id="notes" name="Notes"></textarea>
+
+    <button type="submit">Submit Quote Request</button>
+</form>
+
+</section>
+
+<footer>
+  <div class="footer-content">
+
+    <div class="footer-left">
+      <h3>Hours</h3>
+      <p>Everyday: 7am - 7pm</p>
+    </div>
+
+    <div class="footer-center">
+      <h1>Mile High Mobility Scooters</h1>
+      <p>milehighmobilityscooters@gmail.com</p>
+      <p>720-447-3845</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="contact.html"><button>Contact Us</button></a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

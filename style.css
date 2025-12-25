@@ -1,0 +1,241 @@
+/* IMPORT POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* GLOBAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* SHOW HEADER TITLE ONLY ON HOME PAGE */
+body:not(.home) header h1 {
+    display: none;
+}
+
+/* HEADER (GRADIENT + CENTERED TITLE) */
+header {
+    background: linear-gradient(to bottom, #1f4fd8, #ffffff);
+    color: black;
+    text-align: center;
+    padding: 150px 20px 50px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: black;
+}
+
+/* CONSISTENT NAVIGATION (RIGHT-ALIGNED) */
+nav {
+    text-align: right;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 25px;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+nav a.active {
+    border-bottom: 3px solid white;
+}
+
+/* HERO SECTION */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* IMAGE ROW */
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.right-img {
+    width: 60%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+/* BUTTONS */
+button {
+    background: #1f4fd8;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #163bb5;
+}
+
+/* SCOOTER INFO SECTION */
+#scooter-info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#scooter-info img {
+    width: 85%;
+    max-width: 750px;
+}
+
+#scooter-info .text {
+    width: 35%;
+}
+
+#scooter-info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* TESTIMONIALS */
+.testimonials-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#testimonials-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 50px;
+}
+
+#testimonials-content {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#testimonials-left {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonials-left p {
+    margin-bottom: 15px;
+    text-align: center;
+    max-width: 500px;
+}
+
+#testimonials-right {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.testimonial-card {
+    background: #f0f0f0;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+#testimonials-right button {
+    margin: 40px auto 0 auto;
+    display: block;
+}
+
+/* FIX PRODUCT PAGE IMAGE SIZE */
+.product-image {
+    width: 60%;
+    max-width: 600px;
+    margin: 30px auto;
+    display: block;
+}
+
+/* OVERRIDE HOMEPAGE SCOOTER IMAGE RULES ON PRODUCT PAGE */
+#products img {
+    width: 60% !important;
+    max-width: 600px !important;
+}
+
+/* FOOTER (LIGHT BLUE) */
+footer {
+    background: #8bb3ff;
+    color: black;
+    padding: 50px 20px 80px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-right button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    #home .image-row,
+    #scooter-info,
+    #testimonials-content,
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-img,
+    #scooter-info img,
+    #scooter-info .text,
+    #testimonials-right,
+    #testimonials-left,
+    .footer-content div {
+        width: 100%;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+    }
+}
