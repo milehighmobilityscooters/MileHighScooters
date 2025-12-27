@@ -19,13 +19,62 @@
         margin: 0 auto 20px auto;
         display: block;
     }
+
+    /* Dropdown Container */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Main word (Service Areas) — same as other nav links */
+    .dropdown .no-click {
+        cursor: default;
+        padding: 0 10px;
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+        margin-left: 25px;
+        font-size: 1.2rem;
+    }
+
+    /* Dropdown Content */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+        padding: 10px 0;
+        border-radius: 6px;
+        z-index: 999;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Dropdown Items */
+    .dropdown-content p {
+        margin: 0;
+        padding: 10px 20px;
+        white-space: nowrap;
+        font-size: 0.95rem;
+        color: black;
+    }
+
+    .dropdown-content p:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 </style>
 
 </head>
 
 <body>
 
-<!-- ✅ HEADER WITH EXTRA-LARGE LOGO MOVED UP -->
+<!-- HEADER -->
 <header>
   <div style="display: flex; align-items: center; justify-content: space-between; margin-top: -120px;">
     
@@ -37,13 +86,29 @@
     </a>
 
     <!-- Navigation bar -->
-    <nav style="margin-right: 20px;">
-      <a href="index.html">Home</a>
-      <a href="products.html" class="active">Products</a>
-      <a href="quote.html">Free Quote</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-      <a href="faqs.html">FAQs</a>
+    <nav style="margin-right: 20px; font-family: 'Poppins', sans-serif;">
+      <a href="index.html" style="color: white;">Home</a>
+      <a href="products.html" class="active" style="color: white;">Products</a>
+
+      <!-- SERVICE AREAS DROPDOWN -->
+      <div class="dropdown">
+        <a href="#" class="no-click">Service Areas</a>
+        <div class="dropdown-content">
+          <p>Denver</p>
+          <p>Aurora</p>
+          <p>Lakewood</p>
+          <p>Westminster</p>
+          <p>Broomfield</p>
+          <p>Boulder</p>
+          <p>Golden</p>
+          <p>Centennial</p>
+        </div>
+      </div>
+
+      <a href="quote.html" style="color: white;">Free Quote</a>
+      <a href="about.html" style="color: white;">About Us</a>
+      <a href="contact.html" style="color: white;">Contact</a>
+      <a href="faqs.html" style="color: white;">FAQs</a>
     </nav>
   </div>
 </header>
